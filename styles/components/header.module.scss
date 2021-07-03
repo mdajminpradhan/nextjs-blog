@@ -1,0 +1,23 @@
+// variable file
+@import '../variables.scss';
+
+// mixin file
+@import '../mixin.scss';
+
+.header {
+  background: white;
+  box-shadow: 0 0 10px 5px aliceblue;
+
+  .container {
+    @include flexBetweenCenter;
+
+    .header__right {
+      ul {
+        li {
+          display: inline-block;
+          margin: 0 1rem;
+        }
+      }
+    }
+  }
+}

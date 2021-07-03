@@ -1,0 +1,19 @@
+// variable file
+@import '../variables.scss';
+
+// mixin file
+@import '../mixin.scss';
+
+
+// post starts here
+.post{
+    .post__thumbnail {
+
+        img {
+            width: 700px;
+            height: 320px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+    }
+}
