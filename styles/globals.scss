@@ -1,31 +1,36 @@
 html,
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+	padding: 0;
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
+		Helvetica Neue, sans-serif;
+	background: rgba(240, 240, 240, 0.05);
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+	color: inherit;
+	text-decoration: none;
 }
 
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 // googel fonts
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Poppins:wght@200;300;400;500;600;800;900&display=swap');
 
 li {
-  list-style: none;
+	list-style: none;
+}
+
+a {
+	cursor: pointer;
 }
 
 // layout styles
 .container {
-  width: 85%;
-  margin: auto;
+	width: 85%;
+	margin: auto;
 }
 
 h1,
@@ -44,9 +49,62 @@ input,
 textarea,
 small,
 div {
-  font-family: 'Poppins', sans-serif;
+	font-family: 'Poppins', sans-serif;
 }
 
 .logo {
-  font-family: 'Amatic SC', cursive;
+	font-family: 'Amatic SC', cursive;
+	color: rgb(255, 119, 119);
+	cursor: pointer;
 }
+
+// // responsive screen starts here
+@media (min-width: 250px) {
+	.logo {
+		font-size: 1.1rem !important;
+	}
+}
+
+@media (min-width: 320px){
+	.logo {
+		font-size: 1.35rem !important;
+	}
+}
+
+@media (min-width: 360px){
+  .logo {
+		font-size: 1.45rem !important;
+	}
+}
+
+@media (min-width: 412px){
+  .logo {
+		font-size: 1.45rem !important;
+	}
+}
+
+@media (min-width: 768px){
+  .logo {
+		font-size: 1.65rem !important;
+	}
+}
+
+// @media (min-width: 834px){
+
+// }
+
+// @media (min-width: 1024px){
+
+// }
+
+// @media (min-width: 1280px){
+
+// }
+
+// @media (min-width: 1440px){
+
+// }
+
+// @media (min-width: 1920px){
+
+// }

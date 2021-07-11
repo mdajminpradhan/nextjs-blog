@@ -1,0 +1,154 @@
+// variable file
+@import '../variables.scss';
+
+// mixin file
+@import '../mixin.scss';
+
+// footer starts here
+.footer {
+	background: rgba(0, 0, 0, 0.99);
+	padding: 2rem 0;
+
+	.container {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-gap: 2rem;
+
+		.separator {
+			height: 3px;
+			width: 70px;
+			background: dodgerblue;
+			display: block;
+			border-radius: 100px;
+		}
+
+		.footer__colTitle {
+			color: white;
+			font-weight: 400;
+		}
+
+		.footer__colOne {
+			p {
+				color: rgba(255, 255, 255, 0.85);
+				font-weight: 200;
+				font-size: .925rem;
+			}
+		}
+
+		ul {
+			margin-left: 0rem;
+
+			li {
+				list-style: disc;
+				color: white;
+				margin-bottom: .35rem;
+
+				a {
+					color: rgba(255, 255, 255, 0.85);
+					font-weight: 200;
+					font-size: .9rem;
+					border: transparent;
+					transition: all .75s;
+
+					&:hover {
+						border-bottom: 1px solid rgb(0, 255, 179);
+					}
+				}
+			}
+		}
+
+		.footer__colFour {
+			.gallery {
+				margin-top: 1rem;
+				svg {
+					background: white;
+					padding: 0.5rem;
+					border-radius: 5px;
+					font-size: 2.2rem;
+					margin: .5rem .75rem;
+
+					&:first-child {
+						color: rgb(0, 110, 255);
+					}
+
+					&:nth-child(2) {
+						color: rgb(77, 185, 247);
+					}
+
+					&:nth-child(3) {
+						color: rgb(255, 147, 147);
+					}
+
+					&:nth-child(4) {
+						color: rgb(27, 158, 235);
+					}
+
+					&:nth-child(5) {
+						color: rgb(235, 27, 27);
+					}
+				}
+			}
+		}
+	}
+
+    .copyright {
+        color: white;
+        margin-top: 2rem;
+        font-weight: 400;
+    }
+}
+
+
+
+// // responsive screen starts here
+@media (min-width: 250px){
+	.footer {
+		.container {
+			grid-template-columns: 1fr !important;
+		}
+	}
+}
+
+// @media (min-width: 320px){
+
+// }
+
+// @media (min-width: 360px){
+
+// }
+
+// @media (min-width: 412px){
+
+// }
+
+@media (min-width: 768px){
+	.footer {
+		.container {
+			grid-template-columns: repeat(2, 1fr) !important;
+		}
+	}
+}
+
+// @media (min-width: 834px){
+
+// }
+
+// @media (min-width: 1024px){
+
+// }
+
+@media (min-width: 1280px){
+	.footer {
+		.container {
+			grid-template-columns: repeat(4, 1fr) !important;
+		}
+	}
+}
+
+// @media (min-width: 1440px){
+
+// }
+
+// @media (min-width: 1920px){
+
+// }

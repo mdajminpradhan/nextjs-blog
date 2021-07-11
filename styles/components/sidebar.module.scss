@@ -1,0 +1,106 @@
+// variable file
+@import '../variables.scss';
+
+// mixin file
+@import '../mixin.scss';
+
+// sidebar starts here
+.sidebar {
+	.categories {
+		h4 {
+			font-weight: 600;
+		}
+
+		ul {
+			padding-left: .75rem;
+
+			li {
+				background: linear-gradient(120deg, #a1c4fd 0%, #c2c9fb 100%);
+				margin: 1rem 0;
+				padding: .5rem 1rem;
+				border-radius: 30px;
+				cursor: pointer;
+
+				div {
+					@include flexBetweenCenter;
+				}
+			}
+		}
+	}
+}
+
+
+
+// // responsive screen starts here
+@media (min-width: 250px){
+	.sidebar {
+		.categories {
+	
+			ul {
+	
+				li {
+					padding: .35rem 1rem !important;
+					font-size: .8rem !important;
+				}
+			}
+		}
+	}
+}
+
+// @media (min-width: 320px){
+
+// }
+
+@media (min-width: 360px){
+	.sidebar {
+		.categories {
+	
+			ul {
+	
+				li {
+					padding: .5rem 1rem !important;
+					font-size: .85rem !important;
+				}
+			}
+		}
+	}
+}
+
+// @media (min-width: 412px){
+
+// }
+
+// @media (min-width: 768px){
+
+// }
+
+// @media (min-width: 834px){
+
+// }
+
+// @media (min-width: 1024px){
+
+// }
+
+@media (min-width: 1280px){
+
+	.sidebar {
+		.categories {
+	
+			ul {
+	
+				li {
+					font-size: .9rem !important;
+				}
+			}
+		}
+	}
+}
+
+// @media (min-width: 1440px){
+
+// }
+
+// @media (min-width: 1920px){
+
+// }

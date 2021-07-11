@@ -4,20 +4,120 @@
 // mixin file
 @import '../mixin.scss';
 
+// header starts here
 .header {
-  background: white;
-  box-shadow: 0 0 10px 5px aliceblue;
+	background: white;
+	box-shadow: 0 0 10px 5px aliceblue;
+  position: relative;
+  z-index: 3;
 
-  .container {
-    @include flexBetweenCenter;
+	.container {
+		@include flexBetweenCenter;
 
-    .header__right {
-      ul {
-        li {
-          display: inline-block;
-          margin: 0 1rem;
-        }
-      }
-    }
+		.header__right {
+			ul {
+				li {
+					display: inline-block;
+					margin: 0 1rem;
+				}
+			}
+		}
+
+		svg {
+			display: none;
+			cursor: pointer;
+		}
+	}
+}
+.mobilemenu {
+  position: absolute;
+  top: -100%;
+  left: 0;
+  right: 0;
+  z-index: 2;
+	background: white;
+	box-shadow: 0 0 10px 5px aliceblue;
+  transition: all .5s;
+
+	ul {
+		padding: 1.5rem;
+		li {
+			display: block;
+			list-style: none;
+			padding: 1rem 0;
+		}
+	}
+}
+
+.showMobileMenu {
+  top: 6% !important;
+}
+
+// // responsive screen starts here
+@media (min-width: 250px) {
+	.header {
+		.container {
+			.header__right {
+				ul {
+					display: none;
+				}
+			}
+
+			svg {
+				display: block !important;
+			}
+		}
+	}
+}
+
+// @media (min-width: 320px){
+
+// }
+
+// @media (min-width: 360px){
+
+// }
+
+// @media (min-width: 412px){
+
+// }
+
+@media (min-width: 768px) {
+	.header {
+		.container {
+			.header__right {
+				ul {
+					display: block;
+				}
+			}
+
+			svg {
+				display: none !important;
+			}
+		}
+	}
+
+  .mobilemenu {
+    display: none;
   }
 }
+
+// @media (min-width: 834px){
+
+// }
+
+// @media (min-width: 1024px){
+
+// }
+
+// @media (min-width: 1280px){
+
+// }
+
+// @media (min-width: 1440px){
+
+// }
+
+// @media (min-width: 1920px){
+
+// }

@@ -1,0 +1,110 @@
+// variable file
+@import '../variables.scss';
+
+// mixin file
+@import '../mixin.scss';
+
+// postdetail starts here
+.postdetail {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr .35fr;
+        grid-gap: 5rem;
+        padding: 3.5rem 0;
+        width: 77.5%;
+
+        .postdetail__post {
+            .post {
+                margin-bottom: 4rem;
+                border: 1px solid rgb(227, 240, 252);
+                border-radius: 15px;
+                box-shadow: 0 0 10px 0 aliceblue;
+            
+                .post__content {
+                    background: white;
+                    padding: 1rem 2rem;
+                    border-radius: 10px;
+                    border-top-left-radius: 0px;
+                    border-top-right-radius: 0px;
+                    border-bottom-left-radius: 15px;
+                    border-bottom-right-radius: 15px;
+            
+                    h3 {
+                        font-weight: 400;
+                    }
+            
+                    small {
+                        color: #00000063;
+                    }
+            
+                    p {
+                        display: inline-block;
+                        margin: .5rem 0;
+                        font-size: .95rem;
+                        color: #00000070;
+                    }
+            
+                    a {
+                        background: linear-gradient(120deg, #a1c4fd 0%, #c2c9fb 100%);
+                        padding: .5rem 1.35rem;
+                        border-radius: 5px;
+                        margin-top: 1rem;
+                        display: inline-block;
+                        font-size: .9rem;
+                        box-shadow: 0 0 10px 0px aliceblue;
+                        color: black;
+                        border: 1px solid #d1d1d142;
+                    }
+                }
+            }
+            
+        }
+    }
+}
+
+
+// // responsive screen starts here
+
+// @media (min-width: 250px){
+
+// }
+
+// @media (min-width: 320px){
+
+// }
+
+// @media (min-width: 360px){
+
+// }
+
+// @media (min-width: 412px){
+
+// }
+
+// @media (min-width: 768px){
+
+// }
+
+// @media (min-width: 834px){
+
+// }
+
+// @media (min-width: 992px){
+
+// }
+
+// @media (min-width: 1024px){
+
+// }
+
+// @media (min-width: 1280px){
+
+// }
+
+// @media (min-width: 1440px){
+
+// }
+
+// @media (min-width: 1920px){
+
+// }

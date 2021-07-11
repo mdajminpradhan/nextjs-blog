@@ -1,0 +1,77 @@
+// variable file
+@import '../variables.scss';
+
+// mixin file
+@import '../mixin.scss';
+
+
+// home starts here
+.base {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr .35fr;
+        grid-gap: 5rem;
+        padding: 3.5rem 0;
+        width: 77.5%;
+    }
+}
+
+
+// // responsive screen starts here
+@media (min-width: 250px){
+    .base {
+        .container {
+            grid-template-columns: 1fr !important;
+            grid-gap: 2rem !important;
+        }
+    }
+}
+
+// @media (min-width: 320px){
+
+// }
+
+// @media (min-width: 360px){
+
+// }
+
+// @media (min-width: 412px){
+
+// }
+
+// @media (min-width: 768px){
+
+// }
+
+@media (min-width: 992px){
+    .base {
+        .container {
+            grid-template-columns: 1fr 0.35fr !important;
+            grid-gap: 1.5rem !important;
+        }
+    }
+}
+
+// @media (min-width: 834px){
+
+// }
+
+// @media (min-width: 1024px){
+
+// }
+
+@media (min-width: 1280px){
+    .base {
+        .container {
+            grid-gap: 2.5rem !important;
+        }
+    }
+}
+
+// @media (min-width: 1440px){
+
+// }
+
+// @media (min-width: 1920px){
+
+// }

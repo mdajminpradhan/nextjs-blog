@@ -1,0 +1,148 @@
+// variable file
+@import '../variables.scss';
+
+// mixin file
+@import '../mixin.scss';
+
+// about starts here
+.gallery {
+	.container {
+		padding: 1rem 0;
+
+		h1 {
+			color: $primary;
+			font-weight: 600;
+		}
+
+		.images {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			grid-gap: 3rem;
+			margin: 3rem 0;
+
+            div {
+                border-radius: 10px;
+                overflow: hidden;
+            }
+
+			img {
+				display: inline-block;
+				width: 50%;
+				height: 10% !important;
+				margin-bottom: 2rem;
+				object-fit: cover;
+				transition: all .5s;
+
+				&:hover {
+					transform: scale(1.05);
+				}
+			}
+		}
+	}
+}
+
+
+
+// // responsive screen starts here
+
+@media (min-width: 250px){
+	.gallery {
+		.container {
+			h1 {
+				font-size: 1.1rem !important;
+			}
+
+			.images {
+				grid-gap: 1rem !important;
+				margin: 1.5rem 0 !important;
+
+				div {
+					border-radius: 5px !important;
+				}
+			}
+		}
+	}
+}
+
+// @media (min-width: 320px){
+
+// }
+
+// @media (min-width: 360px){
+
+// }
+
+@media (min-width: 412px){
+	.gallery {
+		.container {
+			.images {
+				grid-gap: 1.75rem !important;
+			}
+		}
+	}
+}
+
+@media (min-width: 768px){
+	.gallery {
+		.container {
+
+			h1 {
+				font-size: 1.25rem !important;
+			}
+
+			.images {
+				grid-gap: 2rem !important;
+			}
+		}
+	}
+}
+
+// @media (min-width: 834px){
+
+// }
+
+@media (min-width: 992px){
+	.gallery {
+		.container {
+
+			h1 {
+				font-size: 1.5rem !important;
+			}
+
+			.images {
+				grid-gap: 2.2rem !important;
+			}
+		}
+	}
+}
+
+// @media (min-width: 1024px){
+
+// }
+
+@media (min-width: 1280px){
+	.gallery {
+		.container {
+
+			h1 {
+				font-size: 1.65rem !important;
+			}
+
+			.images {
+				grid-gap: 3rem !important;
+
+				div {
+					border-radius: 15px !important;
+				}
+			}
+		}
+	}
+}
+
+// @media (min-width: 1440px){
+
+// }
+
+// @media (min-width: 1920px){
+
+// }
