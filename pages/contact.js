@@ -38,7 +38,7 @@ const Contact = () => {
 							<span>Address: </span>
 							<br />
 							<br />
-							<p>Box 565, Pinney's Beach, Charlestown,</p>
+							<p>Box 565, Pinney&apos;s Beach, Charlestown,</p>
 							<p>Nevis, West Indies, Caribbean</p>
 						</div>
 					</div>
@@ -69,11 +69,11 @@ const Contact = () => {
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 						<form action="">
 							<div className={styles.input}>
-								<input type="text" placeholder="Your name" required />
-								<input type="email" placeholder="Email address" required />
+								<input type="text" placeholder="Your name" required="true" />
+								<input type="email" placeholder="Email address" required="true" />
 							</div>
-							<input type="text" placeholder="Subject" required />
-							<textarea name="" id="" cols="30" rows="7" />
+							<input type="text" placeholder="Subject" required="true" />
+							<textarea id="" cols="30" rows="7" />
 							<button onClick={handleSubmit}>Submit</button>
                             <br />
                             <br />
