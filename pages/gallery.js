@@ -24,8 +24,8 @@ const Gallery = () => {
 
                 <div className={styles.images}>
                     {
-                        array.map(image => (
-                            <Image src={image} alt="gallery" />
+                        array.map((image, index) => (
+                            <Image key={index} src={image} alt="gallery" />
                         ))
                     }
                 </div>
