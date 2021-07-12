@@ -23,6 +23,8 @@ const Post = ({ post, limit = '50', readMore = 'true' }) => {
 		[ post ]
 	);
 
+	post && post.category && post.author && post.author.name && console.log(post.author);
+
 	return (
 		<div className={styles.post}>
 			<div className={styles.post__thumbnail}>
@@ -52,19 +54,15 @@ const Post = ({ post, limit = '50', readMore = 'true' }) => {
 			</div>
 			<div className={styles.post__content}>
 				<h3>{post.title}</h3>
-				{post &&
-				post.category &&
-				post.author &&
-				post.author.name && (
-					<small>
-						{post.category[0].title} / {new Date(post.date).toDateString()} / post by
-						{post.author.name}
-					</small>
-				)}
+
+				<small>
+					{post && post.category ? post.category[0].title : 'Uncategorized'} /{' '}
+					{post && post.date ? new Date(post.date).toDateString() : '1 May, 2021'} / post by
+					{post && post.author ? post.author.name : 'Ajmin Pradhan'}
+				</small>
 
 				{post && post.description && <p>{post.description.substr(0, limit)}</p>}
 
-				{console.log(readMore)}
 				{readMore === 'true' ? <Link href={`/post/${post._id}`}>Read more</Link> : ''}
 			</div>
 		</div>
