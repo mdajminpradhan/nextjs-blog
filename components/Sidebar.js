@@ -36,7 +36,7 @@ const Sidebar = () => {
 							</li>
 						))
 					) : (
-						<p>No categories found!!</p>
+						<p>Getting categories from Database!!</p>
 					)}
 				</ul>
 			</div>
