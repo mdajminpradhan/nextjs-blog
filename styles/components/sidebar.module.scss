@@ -27,6 +27,26 @@
 			}
 		}
 	}
+
+	.tags {
+
+		margin-top: 3.5rem;
+
+		h4 {
+			font-weight: 600;
+		}
+
+		ul {
+			li {
+				display: inline-block;
+				border-radius: 30px;
+				padding: .3rem 1rem;
+				font-size: .95rem;
+				border: 1px solid $primary;
+				margin: .5rem;
+			}
+		}
+	}
 }
 
 

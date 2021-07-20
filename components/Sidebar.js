@@ -36,8 +36,20 @@ const Sidebar = () => {
 							</li>
 						))
 					) : (
-						<p>Getting categories from Database!!</p>
+						<p>Wait please, Getting data from Database!!</p>
 					)}
+				</ul>
+			</div>
+			<div className={styles.tags}>
+				<h4>Tags</h4>
+				<ul>
+					<li>Manali</li>
+					<li>Family</li>
+					<li>Cold</li>
+					<li>Summer</li>
+					<li>Darjiling</li>
+					<li>Istanbul</li>
+					<li>Mountains</li>
 				</ul>
 			</div>
 		</div>
